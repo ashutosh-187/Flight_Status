@@ -1,0 +1,29 @@
+@keyframes rotate-out {
+    0% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate-in {
+    0% {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.animate-rotate-out {
+    animation: rotate-out 1s forwards;
+}
+
+.animate-rotate-in {
+    animation: rotate-in 1s forwards;
+}
